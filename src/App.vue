@@ -1,33 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-      <router-link to="/aboutMe">About me</router-link>
+        <div>
+      <b-navbar type="dark" variant="dark">
+        <b-navbar-nav>
+          <b-navbar-brand href="#">José González</b-navbar-brand>
+          <b-nav-item :to="{name: 'Home'}" exact>Home</b-nav-item>
+          <b-nav-item :to="{name: 'About'}">About</b-nav-item>
+          <b-nav-item :to="{name: 'Projects'}">Projects</b-nav-item>
+          <b-nav-item :to="{name: 'Resume'}">Resume</b-nav-item>
+
+          <!-- Navbar dropdowns -->
+          <b-nav-item-dropdown text="Contact" right>
+            <b-dropdown-item :to="{name: 'Email'}">Email</b-dropdown-item>
+            <b-dropdown-item href="https://www.linkedin.com/in/jos%C3%A9-alberto-gonz%C3%A1lez-arteaga-1117b7153/" target="_blank">Linkedin</b-dropdown-item>
+            <b-dropdown-item href="https://github.com/josegzza" target="_blank">Github</b-dropdown-item>
+            <b-dropdown-item href="https://twitter.com/josegzza" target="_blank">Twitter</b-dropdown-item>
+          </b-nav-item-dropdown>
+
+        </b-navbar-nav>
+      </b-navbar>
     </div>
     <router-view/>
   </div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+ 
