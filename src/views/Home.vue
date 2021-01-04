@@ -1,110 +1,80 @@
 <template>
 <body>
   <div class="header">
-        <div class="container py-4">
-              <h1 href="" class="typewrite" data-period="2000" data-type='[ 
-              "Hi, I am José González.", 
-              "I am Data Science Enthusiast.", 
-              "Computer Science Student.",
-              "I am self-Learner." 
-              ]'>
-                <span class="wrap"></span>
-               </h1>
-        </div>
+  <div id="app" class="w-screen h-screen bg-gray-800 flex flex-col justify-center ">
+    <div class="container m-auto bg-gray-900 text-center text-white shadow-2xl h-64 flex flex-col justify-center rounded-lg text-3xl">
+      <typical
+        class="vt-title"
+        :steps="['Hi, I am Jose Gonzalez! :-) 👋', 500]"
+        :wrapper="'h1'"
+      ></typical>
+      <typical
+        class="vt-subTitle"
+        :steps="['I am', 1000, 
+                  'I am Data Science Enthusiast. ⛏', 1000, 
+                  'I am Computer Science Student. 🖥', 1000,
+                  'I am self-Learner. 📚', 1000]"
+        :loop='Infinity'
+        :wrapper="'h2'"
+      ></typical>
     </div>
-    <footer class="footerContainer">
-      <p class="footer">Copyright © José Gzz</p>  
+  </div>
+  </div>
+
+  <footer class="footerContainer">
+      <p>Copyright © José Gzz</p>  
     </footer>
 </body>  
 </template>
-
+ 
 <script>
-var TxtType = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-};
-
-TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-
-    if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
+import typical from 'vue-typical'
+ 
+export default {
+  name: 'app',
+  data: function() {
+    return {
+      msg: 'vue typical'
     }
-
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-
-    if (this.isDeleting) { delta /= 2; }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-    }
-
-    setTimeout(function() {
-    that.tick();
-    }, delta);
-};
-
-window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
-    }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid white }";
-    document.body.appendChild(css);
-};
-</script>
-
-<style>
-body {
-    background: #333;
+  },
+  components: {
+    typical
   }
-  
-  .header {
+}
+</script> 
+ 
+<style>
+.vt-title{
+  color: #42b983;
+  font-size: 60px;
+}
+
+.vt-subTitle{
+  font-size: 40px;
+}
+
+.header {
       text-align: center;
       background: #222;
-      padding-top: 200px;
+      padding-top: 250px;
       padding-bottom: 250px;
   }
-  
-  .typewrite {
-    color: #fff;
-    text-align: center;
-    font-size: 80px;
-  }
-  
-  .footerContainer {
+
+
+.footerContainer {
     color: #fff;
     background: #222;
     text-align: center;
     display: block;
     bottom: 0px;
-    height: [depends by content];
     right: 0%;
     left: 0%;
     position: absolute;
     visibility: visible;
   }
-</style>
+
+
+  
+
+
+</style> 
