@@ -2,10 +2,11 @@
 <body>
   <div class="header">
   <div id="app" class="w-screen h-screen bg-gray-800 flex flex-col justify-center ">
+  
     <div class="container m-auto bg-gray-900 text-center text-white shadow-2xl h-64 flex flex-col justify-center rounded-lg text-3xl">
       <typical
         class="vt-title"
-        :steps="['Hi, I am Jose Gonzalez! :-) 👋', 500]"
+        :steps="['Hi, I am José González! :-) 👋', 500]"
         :wrapper="'h1'"
       ></typical>
       <typical
@@ -13,7 +14,9 @@
         :steps="['I am', 1000, 
                   'I am Data Science Enthusiast. ⛏', 1000, 
                   'I am Computer Science Student. 🖥', 1000,
-                  'I am self-Learner. 📚', 1000]"
+                  'I am self-Learner. 📚', 1000,
+                  'I am Proud music geek. 🎵', 1000,
+                  'I am Coffee adict. 🍵', 1000]"
         :loop='Infinity'
         :wrapper="'h2'"
       ></typical>
