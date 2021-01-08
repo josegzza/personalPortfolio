@@ -69,7 +69,7 @@ export default {
   background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
   color: #eee;
   width: 100%;
-  height: 93vh;
+  height: 92.5vh;
   justify-content: center;
   align-items: center;
   display: flex;
