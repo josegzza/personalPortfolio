@@ -1,8 +1,11 @@
 <template>
 <div>
-  <h2><smTab>{{name}}</smTab> ( )
-      <bracket>{</bracket>
-        <br><br>
+
+<div v-if="type == 'function'">
+  <br>
+  <h2><smTab>{{name}}</smTab> <bracket> ( ) <br>
+      <smtab>{</smtab></bracket>
+        <br>
         <tab><return>return</return></tab> <bracket>[</bracket> <br><br>
           <div v-for="(val, attr) of values" :key='val.id'>
             <linecode 
@@ -10,11 +13,28 @@
             :val= val
             :tabb = tabb />
           </div>
-          <tab><bracket>]</bracket></tab>
+          <smtab><bracket>]</bracket></smtab>
         <br>
       <bracket>}</bracket>
       <br>
   </h2>
+</div>
+<div v-if="type == 'constructor'">
+  <br>
+  <h2><return><smtab>{{name}}</smtab></return> <bracket>( ) 
+      <br><smtab>{</smtab> </bracket>
+        <br>
+          <div v-for="(val, attr) of values" :key='val.id'>
+            <linecode 
+            :atribute= attr
+            :val= val
+            :tabb = tabb
+            :type = type />
+          </div>
+      <bracket>}</bracket>
+  </h2>
+</div>
+
 </div>
 </template>
 
@@ -42,6 +62,10 @@ export default {
       tabb: {
           type: Boolean,
           requiere: false
+      },
+      type: {
+        type: String,
+        default: "function"
       }
   }
 }
@@ -57,17 +81,17 @@ export default {
     color: #eeff31;
   }
   tab{
-      padding-left:2em;
+      padding-left:4em;
   }
   smTab{
-      padding-left:0.5em;
+      padding-left:1em;
   }
   return{
       color: #5918df;
   }
   bracket{
       color: white;
-      padding-left: 0.5em; 
+      padding-left: 1em; 
   }
   
 </style>

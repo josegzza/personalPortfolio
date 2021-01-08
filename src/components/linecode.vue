@@ -1,12 +1,12 @@
 <template>
 <div>
-    <div v-if="tabb">
+
+    <div v-if="type == 'function'">
     <h2 v-if="atribute"><tab>{{atribute}} : {{val}} </tab></h2>
     <h2 v-if="!atribute"> <tab> {{val}} </tab></h2>
     </div>
-    <div v-if="!tabb">
-    <h2 v-if="atribute">{{atribute}} : {{val}}</h2>
-    <h2 v-if="!atribute"> {{val}}</h2>
+    <div v-if="type == 'constructor'">
+    <h2 v-if="atribute"><tab><this>this . </this>{{atribute}} = <val> " {{val}} "</val></tab></h2>
     </div>
 </div>
 </template>
@@ -26,6 +26,11 @@ module.exports = {
       tabb:{
           type: Boolean,
           requiere: false
+      },
+      type:{
+          type: String,
+          default: "function",
+          requiere: false
       }
   }
 }
@@ -36,11 +41,18 @@ module.exports = {
     font-size: 20px;
     color: #24e33a;
   }
+  this {
+      font-size: 20px;
+      color: tomato;
+  }
   tab{
-      padding-left:4em;
+      padding-left:8em;
   }
   smTab{
-      padding-left:0.5em;
+      padding-left:1em;
+  }
+  val{
+      color: #e39d24;
   }
   
 </style>

@@ -1,10 +1,7 @@
 <template>
-<body>
-  <div class="header">
-  <div id="app" class="w-screen h-screen bg-gray-800 flex flex-col justify-center ">
-  
-    <div class="container m-auto bg-gray-900 text-center text-white shadow-2xl h-64 flex flex-col justify-center rounded-lg text-3xl">
-      <typical
+<div class="wrapper">
+  <div class="flex-column">
+  <typical
         class="vt-title"
         :steps="['Hi, I am José González! :-) 👋', 500]"
         :wrapper="'h1'"
@@ -18,16 +15,13 @@
                   'I am Proud music geek. 🎵', 1000,
                   'I am Coffee adict. 🍵', 1000]"
         :loop='Infinity'
-        :wrapper="'h2'"
+        :wrapper="'h3'"
       ></typical>
-    </div>
-  </div>
-  </div>
-
+    </div> 
   <footer class="footerContainer">
       <p>Copyright © José Gzz</p>  
     </footer>
-</body>  
+</div>
 </template>
  
 <script>
@@ -47,26 +41,20 @@ export default {
 </script> 
  
 <style>
+
+
 .vt-title{
   color: #42b983;
   font-size: 60px;
 }
 
 .vt-subTitle{
+  color: #eee;
   font-size: 40px;
 }
 
-.header {
-      text-align: center;
-      background: #222;
-      padding-top: 250px;
-      padding-bottom: 250px;
-  }
-
-
 .footerContainer {
     color: #fff;
-    background: #222;
     text-align: center;
     display: block;
     bottom: 0px;
@@ -75,7 +63,26 @@ export default {
     position: absolute;
     visibility: visible;
   }
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 
+.wrapper {
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+  color: #eee;
+  width: 100%;
+  height: 93vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+}
+
+@keyframes animation {
+   100%{
+    background-position:0px -3000px;
+  }
+}
 
   
 
