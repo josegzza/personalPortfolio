@@ -7,7 +7,7 @@
     </div>
     <div v-if="type == 'constructor'">
     <h2 v-if="atribute"><tab><this>this . </this>{{atribute}} = <val> " {{val}} "</val></tab></h2>
-    </div>
+</div>
 </div>
 </template>
 
@@ -36,10 +36,11 @@ module.exports = {
 }
 </script>
 
-<style>
+<style scoped>
   h2 {
     font-size: 20px;
     color: #24e33a;
+    background-color: transparent;
   }
   this {
       font-size: 20px;

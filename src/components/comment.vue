@@ -15,6 +15,7 @@ module.exports = {
   h2 {
     font-size: 20px;
     color: #78707e;
+    background-color: transparent;
   }
   
 </style>

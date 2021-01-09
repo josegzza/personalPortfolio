@@ -1,6 +1,5 @@
 <template>
-
-  <h2>
+  <div>
   <br>
   <smtab><class>class</class></smtab> José González <bracket> { </bracket>
     <br>
@@ -9,8 +8,7 @@
     <fun :name="'Experience'" :values='v2' />
     <fun :name="'Programming_languages'" :values='v4' />
   <bracket>}</bracket>
-  </h2>
-
+  </div>
 </template>
 
 <script>
@@ -25,7 +23,7 @@ export default {
   data() {
     return {
       v1:{
-          "School": "Instituto Tecnológico de Monterrey campus Monterrey (ITESM)",
+          "School": "Instituto Tecnológico de Monterrey Campus Monterrey (ITESM)",
           "Bachelor of Science":"Computer Science and Technology Engineering",
           "Languages":"[ Spanish : NATIVE, English : BULATS B2 ]",
           "Expected": "May 2022",
@@ -56,12 +54,13 @@ export default {
 
 </script>
 
-<style>
-  h2{
+<style scoped>
+  
+  div{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #222;
     color: #eeff31;
     font-size: 20px;
+    background-image: url('../assets/blackground.jpeg');
   }
   tab{
       padding-left:4em;

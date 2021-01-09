@@ -40,8 +40,11 @@ export default {
 }
 </script> 
  
-<style>
+<style scoped>
 
+div{
+  background-color: transparent;
+}
 
 .vt-title{
   color: #42b983;
@@ -66,7 +69,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 
 .wrapper {
-  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+  background: url("../assets/blackground.jpeg");
   color: #eee;
   width: 100%;
   height: 92.5vh;

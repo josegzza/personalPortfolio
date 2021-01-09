@@ -79,6 +79,7 @@ export default {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     color: #eeff31;
+    background-color: transparent;
   }
   tab{
       padding-left:4em;
