@@ -22,10 +22,10 @@ export default {
   data() {
     return {
       v1:{
-          "School": "Instituto Tecnológico de Monterrey Campus Monterrey (ITESM)",
+          "School": "Instituto Tecnológico y de Estudios Superiores de Monterrey Campus Monterrey (ITESM)",
           "Bachelor of Science":"Computer Science and Technology Engineering",
-          "Languages":"[ Spanish : NATIVE, English : BULATS B2 ]",
           "Expected": "May 2022",
+          "Languages":"[ Spanish : NATIVE, English : BULATS B2 ]",
           "GPA" : "90/100"
       },
       v2:{

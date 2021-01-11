@@ -14,7 +14,7 @@
             <b-dropdown-item :to="{name: 'Email'}">Email</b-dropdown-item>
             <b-dropdown-item href="https://www.linkedin.com/in/jos%C3%A9-alberto-gonz%C3%A1lez-arteaga-1117b7153/" target="_blank">Linkedin</b-dropdown-item>
             <b-dropdown-item href="https://github.com/josegzza" target="_blank">Github</b-dropdown-item>
-            <b-dropdown-item href="https://twitter.com/josegzza" target="_blank">Twitter</b-dropdown-item>
+            <b-dropdown-item href="https://www.kaggle.com/josegzza" target="_blank">Kaggle</b-dropdown-item>
           </b-nav-item-dropdown>
         
         </b-navbar-nav>
