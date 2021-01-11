@@ -3,10 +3,11 @@
         <div>
       <b-navbar class="navbar navbar-dark" style="background-color: #282D37">
         <b-navbar-nav>
-          <b-navbar-brand href="#">José González</b-navbar-brand>
+          <b-navbar-brand>José González</b-navbar-brand>
           <b-nav-item :to="{name: 'Home'}" exact>Home</b-nav-item>
           <b-nav-item :to="{name: 'About'}">About</b-nav-item>
           <b-nav-item :to="{name: 'Projects'}">Projects</b-nav-item>
+          <b-nav-item :to="{name: 'Certificates'}">Certificates</b-nav-item>
           
           <!-- Navbar dropdowns -->
           <b-nav-item-dropdown text="Contact" right>

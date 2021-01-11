@@ -2,7 +2,6 @@
   <div>
   <br>
   <smtab><class>class</class></smtab> José González <bracket> { </bracket>
-    <br>
     <fun :name="'Constructor'" :values='v3' :type="'constructor'"/> 
     <fun :name="'Education'" :values='v1' />
     <fun :name="'Experience'" :values='v2' />

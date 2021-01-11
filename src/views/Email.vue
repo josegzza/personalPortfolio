@@ -1,5 +1,7 @@
 <template>
+<div class = "wrapper">
     <div class="container">
+      <h3>Contact Me!</h3>
         <form>
           <label>Name</label>
           <input 
@@ -26,6 +28,7 @@
           <input type="submit" value="Send">
         </form>
     </div>
+</div>
 </template>
 
 <style scoped>
@@ -69,6 +72,52 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
+
+div{
+  background-color: transparent;
+}
+
+.vt-title{
+  color: #42b983;
+  font-size: 60px;
+}
+
+.vt-subTitle{
+  color: #eee;
+  font-size: 40px;
+}
+
+.footerContainer {
+    color: #fff;
+    text-align: center;
+    display: block;
+    bottom: 0px;
+    right: 0%;
+    left: 0%;
+    position: absolute;
+    visibility: visible;
+  }
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+.wrapper {
+  background: url("../assets/blackground.jpeg");
+  color: black;
+  width: 100%;
+  height: 93vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+}
+
+@keyframes animation {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
 </style>
 
 <script>

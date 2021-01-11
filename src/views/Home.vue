@@ -11,9 +11,10 @@
         :steps="['I am', 1000, 
                   'I am Data Science Enthusiast. ⛏', 1000, 
                   'I am Computer Science Student. 🖥', 1000,
+                  'I am Philosophy lover. 🕉️',
                   'I am self-Learner. 📚', 1000,
                   'I am Proud music geek. 🎵', 1000,
-                  'I am Coffee adict. 🍵', 1000]"
+                  'I am Coffee addict. 🍵', 1000]"
         :loop='Infinity'
         :wrapper="'h3'"
       ></typical>
@@ -72,7 +73,7 @@ div{
   background: url("../assets/blackground.jpeg");
   color: #eee;
   width: 100%;
-  height: 92.5vh;
+  height: 93vh;
   justify-content: center;
   align-items: center;
   display: flex;
