@@ -26,14 +26,14 @@ export default {
           "Bachelor of Science":"Computer Science and Technology Engineering",
           "Expected": "May 2022",
           "Languages":"[ Spanish : NATIVE, English : BULATS B2 ]",
-          "GPA" : "90/100"
+          "GPA" : "3.7/4"
       },
       v2:{
-          "October 2020":"December 2020",
-          "Data Intern": "Lambda Capital",
+          "June 2022":"Current",
+          "Data Analyst Specialist": "Johnson Controls",
           "Location":"Monterrey, Nuevo León, México",
-          "Tasks":"Designed and prepared data for financial strategies algorithms.",
-          "":"Implemented Azure Devs and visualizations of time series."
+          "Tasks":"Designed ETLs and support Procurement department for data and analytics solutions. Working with Azure cloud (Data Factory, Synapse, Storage), Python, SISS, SQL, Informatica, PowerAutomate & PowerApps.",
+          "":"Lead Times: Designed and implemented a pipeline to update Lead Times from supplier ERPs, reducing inaccurate forecasting and revenue gaps. Working with 52 plants and 13 ERPs using ADF, python, and power Automate."
       },
       v3:{
         "name":"José Alberto González Arteaga",
@@ -42,10 +42,10 @@ export default {
         "phone":"+52 1 8117959540",
       },
       v4:{
-        "3 years":"C/C++",
-        "1 year":"Java, SQL, Python",
-        "6 months":"R, JavaScript",
-        "Technologies":"[ Azure DevOps, Linux, Pandas, Git, Github, MongoDB, Vue.js, HTML, CSS, Bootstrap, Windows, Microsoft Suite ]"
+        "4 years":"C/C++, Python",
+        "3 years":"SQL",
+        "2 year":"JavaScript, Java",
+        "Technologies":"[ Azure, AWS, SSIS, PowerAutomate, Informatica, PowerBI, Docker, HTML, CSS, Pandas, Git, Github, MongoDB, Linux, Windows ]"
       }
     }
   }

@@ -9,10 +9,11 @@
       <typical
         class="vt-subTitle"
         :steps="['I am', 1000, 
-                  'I am Data Science Enthusiast. ⛏', 1000, 
-                  'I am Computer Science Student. 🖥', 1000,
-                  'I am Philosophy lover. 🕉️',
+                  'I am Data Engineer. ⛏', 1000, 
+                  'I am Software Engineer. 🖥', 1000,
+                  'I am Philosophy lover. 🕉️', 1000,
                   'I am self-Learner. 📚', 1000,
+                  'I am chess student. ♟️', 1000,
                   'I am Proud music geek. 🎵', 1000,
                   'I am Coffee addict. 🍵', 1000]"
         :loop='Infinity'

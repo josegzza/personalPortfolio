@@ -1,5 +1,46 @@
 <template>
 <div>
+  <div class="wrapper">
+<div class="card-group">
+  <div class="card">
+    <contaner-img><img class="card-img-top" src="../assets/sports.jpeg" alt="Card image cap"></contaner-img>
+    <div class="card-body">
+      <h5 class="card-title">pepeAnalytics<br> September 2022 - Current</h5>
+      <p class="card-text">Sports Analytics bot with visuals. NFL, MLB, Liga Mx, etc.</p>
+        <p class="card-text">Developed using Python, twitter api & sports api.</p>
+    </div>
+    <div class="card-footer">
+    <button type="button" class="btn btn-dark" onclick="window.open('https://github.com/josegzza/pepeAnalytics','mywindow');" style="cursor: pointer;">&nbsp;Github</button>
+    <button type="button" class="btn btn-dark" onclick="window.open('https://twitter.com/pepeAnalytics','mywindow');" style="cursor: pointer;">&nbsp;Twitter</button>
+    </div>
+  </div>
+    <div class="card">
+    <contaner-img><img class="card-img-top" src="../assets/covid.jpg" alt="Card image cap"></contaner-img>
+    <div class="card-body">
+      <h5 class="card-title"> Latin America Vaccination<br> January-June 2021</h5>
+      <p class="card-text">Prediction date for the 70% fully vaccinated SARS-CoV2 2019 population in Latin American countries. Data analysis, data imputation, and Time Series Forecasting.</p>
+        <p class="card-text">Developed using Python3, Pandas, Skforecast, Sklearn, numpy, and matplotlib libraries.</p>
+    </div>
+    <div class="card-footer">
+    <button type="button" class="btn btn-dark" onclick="window.open('https://github.com/josegzza/LatinAmericaVaccination','mywindow');" style="cursor: pointer;">&nbsp;Github</button>
+    <button type="button" class="btn btn-dark" onclick="window.open('https://github.com/josegzza/LatinAmericaVaccination/blob/main/LatinAmericaVaccination_article.pdf','mywindow');" style="cursor: pointer;">&nbsp;Scientific article</button>
+    </div>
+  </div>
+  <div class="card">
+    <container-img><img class="card-img-top" src="../assets/programing.png" alt="Card image cap"></container-img>
+    <div class="card-body">
+      <h5 class="card-title">Axolotl++ compiler <br> January-June 2021</h5>
+      <p class="card-text">Programming language Axolotl++ OOP, based in C++.</p>
+        <p class="card-text">Developed using Python.</p>
+    </div>
+    <div class="card-footer">
+    <button type="button" class="btn btn-dark" onclick="window.open('https://github.com/DiegoMontano2705/Compilador-Axolotl','mywindow');" style="cursor: pointer;">&nbsp;Github</button>
+    </div>
+  </div>
+  
+  
+</div>
+</div>
 <div class="wrapper">
 <div class="card-group">
     <div class="card">

@@ -20,11 +20,11 @@ const routes = [
     name: 'Projects',
     component: () => import(/* webpackChunkName: "Projects" */ '../views/Projects.vue') 
   },
-  {
-    path: '/Email',
-    name: 'Email',
-    component: () => import(/* webpackChunkName: "Email" */ '../views/Email.vue') 
-  },
+  // {
+  //   path: '/Email',
+  //   name: 'Email',
+  //   component: () => import(/* webpackChunkName: "Email" */ '../views/Email.vue') 
+  // },
   {
     path: '/Certificates',
     name: 'Certificates',
