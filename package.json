@@ -11,6 +11,7 @@
   "dependencies": {
     "bootstrap-vue": "^2.21.1",
     "core-js": "^3.6.5",
+    "netlify": "^13.1.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vue-typical": "^1.4.0",
